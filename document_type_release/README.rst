@@ -16,9 +16,9 @@ Document Type Release - LATAM
 .. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
-.. |badge3| image:: https://img.shields.io/badge/github-zanello1234%2Fluispicardo-lightgray.png?logo=github
+.. |badge3| image:: https://img.shields.io/badge/github-zanello1234%2lightgray.png?logo=github
     :target: https://github.com/zanello1234/luispicardo/tree/18.0/document_type_release
-    :alt: zanello1234/luispicardo
+    :alt: zanello1234
 .. |badge4| image:: https://img.shields.io/badge/Odoo-18.0-purple.png
     :target: https://www.odoo.com
     :alt: Odoo 18.0
