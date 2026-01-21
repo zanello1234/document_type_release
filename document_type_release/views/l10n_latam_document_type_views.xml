@@ -82,15 +82,27 @@ if records:
     <record id="view_l10n_latam_document_type_form_inherit" model="ir.ui.view">
         <field name="name">l10n_latam.document.type.form.inherit</field>
         <field name="model">l10n_latam.document.type</field>
-        <field name="inherit_id" ref="l10n_latam_invoice_document.view_l10n_latam_document_type_form"/>
+        <field name="inherit_id" ref="l10n_latam_invoice_document.view_document_type_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='active']" position="after">
+            <xpath expr="//field[@name='code']" position="after">
                 <field name="force_available"/>
             </xpath>
         </field>
     </record>
 
-    <!-- Tree View: Display all document types with toggle controls -->
+    <!-- Tree View: Inherit standard tree to add force_available field -->
+    <record id="view_l10n_latam_document_type_tree_inherit" model="ir.ui.view">
+        <field name="name">l10n_latam.document.type.tree.inherit</field>
+        <field name="model">l10n_latam.document.type</field>
+        <field name="inherit_id" ref="l10n_latam_invoice_document.view_document_type_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='active']" position="after">
+                <field name="force_available" widget="boolean_toggle" string="Force"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Tree View: Display all document types with toggle controls (dedicated view) -->
     <record id="view_l10n_latam_document_type_tree_all" model="ir.ui.view">
         <field name="name">l10n_latam.document.type.tree.all</field>
         <field name="model">l10n_latam.document.type</field>
